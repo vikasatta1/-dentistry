@@ -9,7 +9,7 @@ const Header = () => {
                 <div className={s.top}>
                     <div className={s.logo}>
 
-                            <img src={logo} className={s.logoImg} alt={'логотип'}/>
+                        <img src={logo} className={s.logoImg} alt={'логотип'} />
 
                         <div className={s.logoTitle}>
                             <p>
@@ -21,9 +21,9 @@ const Header = () => {
                         </div>
 
                     </div>
-                    <form className={s.form}>
+                    <form >
                         <input type={'text'} placeholder={'Поиск по сайту'}/>
-                       <button>Поиск</button>
+                        <button>Поиск</button>
                     </form>
 
                 </div>
@@ -35,14 +35,14 @@ const Header = () => {
 
                 </div>
                 <nav className={s.nav}>
-                    <li>
-                        <a href={'#'}>Главная</a>
-                        <a href={'#'}>О нас</a>
-                        <a href={'#'}>Услуги</a>
-                        <a href={'#'}>Вакансии</a>
-                        <a href={'#'}>Контакты</a>
-                        <a href={'#'}>Отзывы</a>
-                    </li>
+                    <ul>
+                        <li><a href={'#'}>Главная</a></li>
+                        <li><a href={'#'}>О нас</a></li>
+                        <li><a href={'#'}>Услуги</a></li>
+                        <li><a href={'#'}>Вакансии</a></li>
+                        <li><a href={'#'}>Контакты</a></li>
+                        <li><a href={'#'}>Отзывы</a></li>
+                    </ul>
                 </nav>
 
             </header>

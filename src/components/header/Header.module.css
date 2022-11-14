@@ -8,17 +8,15 @@
 
 }
 
-.logo p:first-child {
-
-}
-
 .logo {
     display: flex;
     align-items: center;
 }
-.logoTitle{
+
+.logoTitle {
     padding-left: 1em;
 }
+
 .logo p {
     margin: 0;
 }
@@ -45,15 +43,15 @@
     margin-right: 0.6em;
 }
 
-header .top form input {
-    width: 13em;
+.top form input {
+    width: 11em;
     padding: 0.3em;
     border: 1px solid dodgerblue;
-    border-radius: 5px;
+    border-radius: 0.3em;
     outline: none;
 }
 
-header .top form button {
+.top form button {
     margin-left: 0.5em;
     padding: 0.3em;
     border: 1px solid #3cbaec;
@@ -62,12 +60,13 @@ header .top form button {
     color: #fff;
 
 }
-header .top form button:hover{
+
+.top form button:hover {
     background: #0d67bd;
 
 }
 
-header .top form input:hover {
+.top form input:hover {
     border: 2px solid #0d67bd;
 }
 
@@ -82,7 +81,8 @@ header .top form input:hover {
     height: 20vw;
 
 }
-.bannerTitle{
+
+.bannerTitle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,9 +98,46 @@ header .top form input:hover {
 }
 
 .nav {
+
+    background: linear-gradient(dodgerblue, #3cbaec 80%, #0552b1);
+    padding: 0.6em 0 0.3em;
 }
 
-.nav li a {
-    margin-left: 0.6em;
+.nav ul {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #a6d3ea;
+    margin: 0;
+}
+
+.nav ul li {
+
+    list-style-type: none;
+    border-right: 1px solid rgba(5, 82, 177, 0.61);
+    border-left: 1px solid rgba(5, 102, 177, 0.94);
+    padding: 0.6em 0;
+    flex-basis: 100%;
+    text-align: center;
+    border-radius: 0 0 0.6em 0.6em;
+}
+.nav ul li:first-child{
+    border-left: none
+}
+
+.nav ul li:last-child{
+    border-right: none
+}
+
+.nav ul li a {
+   color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0 ,0, 0.7) ;
+}
+
+@media (max-width: 600px) {
+    .logoImg{
+        display: none;
+    }
 }
 
