@@ -11,7 +11,7 @@ const Footer = () => {
                     <li><a href={'#'}>Услуги</a></li>
                     <li><a href={'#'}>Вакансии</a></li>
                     <li><a href={'#'}>Контакты</a></li>
-                    <li><a href={'#'}>Отзывы</a></li>
+                    <li className={s.none}><a href={'#'}>Отзывы</a></li>
                 </ul>
             </nav>
             <p> Наши контакты: <b>тел</b> 7(777) 77 77-77, <b>email</b>: vikasatta1998@gmail.com</p>
