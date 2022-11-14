@@ -1,0 +1,36 @@
+.nav {
+    margin-top: 1em;
+    background: linear-gradient(dodgerblue, #3cbaec 80%, #0552b1);
+    padding: 0.6em 0 0.3em;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #a6d3ea;
+    margin: 0;
+}
+
+.nav ul li {
+    list-style-type: none;
+    border-right: 1px solid rgba(5, 82, 177, 0.61);
+    padding: 0.6em 1em;
+    text-align: center;
+
+}
+.nav ul li:first-child{
+    border-left: none
+}
+
+.nav ul li:last-child{
+    border-right: none
+}
+
+.nav ul li a {
+    color:#ffffff;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0 ,0, 0.7) ;
+}
+footer p{
+text-align: center;
+}

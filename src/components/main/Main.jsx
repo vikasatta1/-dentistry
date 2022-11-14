@@ -1,12 +1,13 @@
 import React from 'react';
 import s from './Main.module.css'
 import tooth from '../../assets/tooth.png'
+import news from '../../assets/news.jpg'
 
 const Main = () => {
     return (
         <div className={s.content}>
             <div className={s.content_left}>
-                <section className={s.service}>
+                <section>
                     <h3>Дополнительные услуги</h3>
                     <article>
                         <img src={tooth} alt={tooth}/>
@@ -46,9 +47,35 @@ const Main = () => {
             </div>
             <div className={s.content_right}>
                 <div className={s.content_right_top}>
-                    <p>Добро пожаловать на наш сайт</p>
+                    <h2>Добро пожаловать на наш сайт</h2>
                     <p>Для того чтобы отвечать требовательным ожиданиям наших клиентов, мы стремимся оснащать
-                    клинику только самым современным оборудованием</p>
+                        клинику только самым современным оборудованием. В нашей клинике широко применяются цифровые
+                        технологии,
+                        позволяющие усовершенствовать процесс лечения.</p>
+                    <a href={'#'}>Читать далее</a>
+                </div>
+                <div className={s.content_right_bottom}>
+
+                    <h2>Главные новости компании</h2>
+                    <div className={s.news}>
+                        <div className={s.news_Image}>
+                            <img src={news} alt={'women'}/>
+                        </div>
+                        <div className={s.news_text}>
+                            <h3>Исследователи из Новой Зеландии провели успешное испытание безыгольной стоматологической
+                                анестезии</h3>
+                            <p>Исследование под названием "Струйная инъекционная стоматологическая анестезия без игл:
+                                первоначальные результаты" представляет новое устройство, разработанное
+                                и опробованное исследователями в Новой Зеландии, обеспечивает обезболивание без иглы.
+                            </p>
+                        </div>
+                    </div>
+                    <div className={s.news_links}>
+                        <a href="#">Ссылка на другую страницу с новостью</a>
+                        <a href="#">Ссылка на другую страницу с новостью</a>
+                        <a href="#">Ссылка на другую страницу с новостью</a>
+
+                    </div>
                     <a href={'#'}>Читать далее</a>
                 </div>
 
